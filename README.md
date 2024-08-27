@@ -8,6 +8,20 @@ DroneScout receivers detect broadcast/direct drone Remote ID signals (Bluetooth,
 \#RemoteID \#FAA \#F3411 \#dronetechnology \#DIN_EN_4709-002
 
 ## Installation
+
+First you must install Mosquitto 
+```
+sudo apt install -y mosquitto
+```
+```
+sudo systemctl status mosquitto
+```
+Ensure it is "active" and "loaded" 
+
+Full instructions here https://docs.vultr.com/install-mosquitto-mqtt-broker-on-ubuntu-20-04-server 
+
+Next
+
 The code is Python3 code. It needs these dependencies (tested under Ubuntu):
 
 ```
